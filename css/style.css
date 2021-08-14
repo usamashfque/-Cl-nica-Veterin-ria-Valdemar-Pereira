@@ -1,0 +1,375 @@
+body {
+    /* font-family: sans-serif; */
+    margin: 0px;
+    padding: 0px;
+    background: #196370;
+    width: 100%;
+}
+
+.naving ul {
+    width: 75%;
+    list-style: none;
+    text-align: right;
+    background-color: #fff;
+    padding: 16px 40px;
+    margin: 0 !important;
+    float: right;
+}
+
+.naving li {
+    padding: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px !important;
+    display: inline-block;
+    border-right: 2px solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #223988;
+}
+
+li .active {
+    border-bottom: 3px solid #196370;
+}
+
+.List_btn {
+    display: none;
+}
+
+.boxer {
+    width: 110px;
+    height: 110px;
+}
+
+.boxer p {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.ciercals {
+    width: 14px;
+    height: 14px;
+    background: #79d637;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 30px;
+}
+
+.borders {
+    border-bottom: 3px solid rgb(10, 117, 6);   
+}
+
+.iamge1Icon {
+    width: 100%;
+}
+
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .header_image {
+        padding-top: 190px !important;
+    }
+    .logo {
+        
+        width: 10% !important;
+    }
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {     
+    .logo {
+        
+        width: 10% !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .boxer {
+        width: 110px;
+        height: 160px;
+    }
+    .background_image {
+        width: 0rem !important;
+        position: absolute;
+        right: 1px;
+        bottom: 1px;
+        overflow: hidden;
+    }
+    .header_image {
+        height: 100%;
+        padding-top: 90px;
+        padding-bottom: 20px;
+        background-size: cover;
+    }
+    .logo {
+        width: 24% !important;        
+        left: 12px !important;
+    }
+    
+}
+
+@media (max-width: 991.98px) {
+    .boxer {
+        width: 110px;
+        height: 160px;
+    }
+    .background_image {
+        width: 0rem !important;
+        position: absolute;
+        right: 1px;
+        bottom: 1px;
+        overflow: hidden !important;
+    }
+    .header_image {
+        height: 100% !important;
+        padding-top: 90px !important;
+        padding-bottom: 20px;
+        background-size: cover;
+    }
+    .ciercals1 {
+        margin: 0px !important;
+    }
+    .ciercals2 {
+        margin: 0px !important;
+    }
+    .ciercals {
+        margin: 6px !important;
+    }
+    .boxer p {
+        margin: 0 !important;
+    }
+    .mbl-margin {
+        margin-bottom: 20px !important;
+    }
+    .foorers .footer-logo {
+        width: 35% !important;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .ciercals1 {
+        text-align: center !important;
+        margin-top: 20px;
+    }
+    .ciercals2 {
+        text-align: center !important;
+        margin-top: 20px;
+    }
+    .clearfix li {
+        width: 40% !important;
+    }
+    .hide_slid {
+        display: block !important;
+    }
+    .row {
+        margin: 0px !important;
+    }
+    .naving ul {
+        display: none;
+        width: 100%;
+    }
+    .naving li {
+        display: block;
+        text-align: center;
+        border: none;
+    }
+    .logo {
+        background-color: #fff !important;
+        top: 4px !important;
+        height: fit-content !important;
+        position: absolute !important;
+        border-radius: 6px !important;       
+        padding: 0 !important;
+    }
+    .logo img {
+        width: 100% !important;
+        padding: 2px !important;
+        border-radius: 6px !important;
+    }
+    .List_btn {
+        display: block;
+        width: 100%;
+        color: #fff;
+        text-align: right;
+        background: rgb(24 100 113);
+    }
+    .right {
+        text-align: center !important;
+    }
+    .iconlist {
+        font-size: 32px;
+        margin: 10px;
+    }
+}
+
+.naving {
+    background-color: #fff;
+}
+
+.naving a {
+    color: #1d3485;
+    padding-bottom: 7px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo {
+    position: absolute;
+    top: 16px;
+    left: 40px;
+    transition: top 0.3s ease-in-out;
+    width: 20%;
+}
+
+.logo img {
+    width: 100%;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    background: white;
+    /* padding: 10px 30px; */
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-shrink .logo {
+    top: 4px;
+}
+
+.navbar-shrink .logo img {
+    width: 60%;
+    padding: 0;
+}
+
+.haders {
+    width: 100%;
+}
+
+.last_nav {
+    border: none !important;
+}
+
+.header_image {
+    width: 100%;
+    height: 100vh;
+    background-color: #196370;
+    background-size: cover;
+    padding-top: 255px;
+    background-repeat: no-repeat;
+}
+
+.header_image h1 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #e2e2e2;
+}
+
+.header_image .cetners {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.icon_header {
+    background: #fff;
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 76px;
+    color: #1f756f
+}
+
+.header_image p {
+    font-size: 20px;
+    color: #e2e2e2;
+}
+
+.col-sm-3 {
+    flex: 0 0 auto;
+    width: 19% !important;
+}
+
+.row-top {
+    margin-top: 60px !important;
+    margin-right: 0px !important;
+}
+
+.sooon {
+    text-align: center;
+    margin-top: 180px;
+    color: #fff;
+}
+
+.sooon a {
+    color: #00265e;
+    text-decoration: underline;
+}
+
+.foorers {
+    padding: 30px 0;
+    margin: 0px !important;
+    background: #73ad4a;
+    text-align: center;
+    border-radius: 0px;
+    filter: drop-shadow(2px 4px 6px rgba(63, 63, 63, 0.226));
+}
+
+.foorers h6 {
+    color: #fff;
+}
+
+.foorers p {
+    color: #fff;
+    margin: 0px !important;
+    font-size: 13px;
+}
+
+.foorers a {
+    font-size: 34px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    margin: 0px;
+    padding: 0px;
+    background: #1d6272;
+    text-align: right;
+}
+
+.foorers .footer-logo {
+    width: 50%;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 37px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 560px) {
+    body {
+        -webkit-text-size-adjust: none;
+        background: #196370;
+    }
+}
+
+.background_image {
+    width: 55rem;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.whatsappicon {
+    background-image: url("../imagens/whatsapp-logo-1.png");
+}
