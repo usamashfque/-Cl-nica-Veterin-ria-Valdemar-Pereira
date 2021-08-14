@@ -56,9 +56,10 @@
             text-underline-position: under;
             text-decoration-thickness: 17%;
         }
+
         @media (max-width: 991.98px) {
             .dicas-box-wrapper {
-                border-right:none !important ;
+                border-right: none !important;
             }
         }
     </style>
@@ -75,23 +76,29 @@
 
         <ul>
             <li>
+                <a href="index.html">Home</a>
+            </li>
+            <span class="menu-sperator">|</span>
+            <li>
                 <a href="QuemSomos.html">Quem Somos</a>
             </li>
+            <span class="menu-sperator">|</span>
             <li>
                 <a href="Equipe.html">Equipe</a>
             </li>
+            <span class="menu-sperator">|</span>
             <li>
                 <a href="Services.html">Serviços</a>
             </li>
+            <span class="menu-sperator">|</span>
             <li>
                 <a href="Faq.html">Dúvidas</a>
             </li>
+            <span class="menu-sperator">|</span>
             <li>
-                <a href="Dicas.html">Dicas</a>
+                <a class="active" href="Dicas.html">Dicas</a>
             </li>
-            <li>
-                <a href="Loja.html">Loja</a>
-            </li>
+            <span class="menu-sperator">|</span>
             <li class="last_nav">
                 <a href="Contato.html">Contato</a>
             </li>
@@ -450,6 +457,20 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS-->
+    <script>
+        $(document).ready(function () {
+            $('.List_btn').click(function () {
+                $('ul').toggleClass('hide_slid');
+
+            })
+        })
+    </script>
+
 </body>
 
 </html>

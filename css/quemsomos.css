@@ -1,6 +1,6 @@
-body {
+/* body {
     background: #176370;
-}
+} */
 
 .aboute img {
     width: 100%;
@@ -198,6 +198,12 @@ body {
         font-size: 14px;
 
     }
+    .second-section-wrapper p {       
+        font-size: 16px !important;
+    }
+    .contact-wrapper {
+        margin-top: 130px !important;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -207,5 +213,8 @@ body {
     }
     .aboute .par {
         text-align: center !important;       
+    }
+    .second-section-wrapper p {       
+        font-size: 16px !important;
     }
 }
