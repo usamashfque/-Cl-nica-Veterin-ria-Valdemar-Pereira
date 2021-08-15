@@ -3,7 +3,7 @@
 } */
 
 .aboute img {
-    width: 100%;
+    width: 85%;
 }
 
 .aboute {
@@ -190,7 +190,7 @@
 
 @media (max-width: 1199.98px) {
     .aboute {
-        margin-top: 100px !important;
+        margin-top: 110px !important;
         margin-bottom: 30px !important;
     }
     .aboute .par {
@@ -208,7 +208,7 @@
 
 @media (max-width: 991.98px) {
     .aboute {
-        margin-top: 100px !important;
+        margin-top: 140px !important;
         margin-bottom: 30px !important;
     }
     .aboute .par {
