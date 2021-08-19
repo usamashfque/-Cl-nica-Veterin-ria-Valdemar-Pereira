@@ -348,8 +348,12 @@ footer {
     text-decoration-thickness: 17%;
 }
 
-.second-section-wrapper, .team-main-wrapper, .services-wrapper, .dicas-wrapper, .contact-wrapper, .faq-wrapper {
-    padding-bottom: 150px !important;
+.second-section-wrapper, .team-main-wrapper, .dicas-wrapper, .faq-wrapper {
+    padding-bottom: 60px !important;
+}
+
+.services-wrapper, .contact-wrapper {
+    padding-bottom: 170px !important;
 }
 
 @media (max-width: 1199.98px) {
@@ -427,7 +431,10 @@ footer {
     .background_image {
         width: 45rem !important;
     }
-    .second-section-wrapper, .team-main-wrapper, .services-wrapper, .dicas-wrapper, .contact-wrapper, .faq-wrapper {
+    .second-section-wrapper, .team-main-wrapper, .dicas-wrapper, .faq-wrapper {
+        padding-bottom: 50px !important;
+    }
+    .services-wrapper, .contact-wrapper {
         padding-bottom: 70px !important;
     }
 }
@@ -517,7 +524,6 @@ footer {
     .cell-number-footer {
         font-size: 34px;
     }
-
     .faq-list li {
         padding: 16px 16px !important;
     }
