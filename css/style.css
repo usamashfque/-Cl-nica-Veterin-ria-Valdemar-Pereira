@@ -4,6 +4,8 @@ body {
     padding: 0px;
     background: #196370;
     width: 100%;
+    position: relative;
+    min-height: calc(100vh - 130px);
 }
 
 .naving ul {
@@ -105,7 +107,7 @@ li .active {
 }
 
 .navbar-shrink .logo img {
-    width: 60%;
+    width: 62%;
     padding: 0;
 }
 
@@ -124,6 +126,8 @@ li .active {
     background-size: cover;
     padding-top: 255px;
     background-repeat: no-repeat;
+    position: relative;
+    z-index: 3;
 }
 
 .header_image h1 {
@@ -344,36 +348,8 @@ footer {
     text-decoration-thickness: 17%;
 }
 
-
-@media (min-width: 991.98px) and (max-width: 1199.98px) {
-    .header_image {
-        padding-top: 190px !important;
-    }
-    .logo {
-        width: 14% !important;
-    }
-    .header_image h1 {
-        font-size: 14px !important;
-    }
-    .header_image p {
-        font-size: 17px !important;
-    }
-    .boxer {
-        width: 90px;
-        height: 90px;
-    }
-    .services-wrapper, .dicas-wrapper, .faq-wrapper {
-        margin-top: 100px;
-    }
-    .background_image {
-        width: 45rem !important;
-    }
-}
-
-@media (min-width: 767.98px) and (max-width: 991.98px) {
-    .logo {
-        width: 10% !important;
-    }
+.second-section-wrapper, .team-main-wrapper, .services-wrapper, .dicas-wrapper, .contact-wrapper, .faq-wrapper {
+    padding-bottom: 150px !important;
 }
 
 @media (max-width: 1199.98px) {
@@ -394,9 +370,6 @@ footer {
     .hide_slid {
         display: block !important;
     }
-    /* .row {
-        margin: 0px !important;
-    } */
     .naving ul {
         display: none;
         width: 100%;
@@ -413,6 +386,7 @@ footer {
         position: absolute !important;
         border-radius: 6px !important;
         padding: 0 !important;
+        width: 16%;
     }
     .logo img {
         width: 100% !important;
@@ -433,6 +407,28 @@ footer {
     .iconlist {
         font-size: 32px;
         margin: 10px;
+    }
+    .header_image {
+        padding-top: 190px !important;
+    }
+    .header_image h1 {
+        font-size: 14px !important;
+    }
+    .header_image p {
+        font-size: 17px !important;
+    }
+    .boxer {
+        width: 90px;
+        height: 90px;
+    }
+    .services-wrapper, .dicas-wrapper, .faq-wrapper {
+        margin-top: 130px;
+    }
+    .background_image {
+        width: 45rem !important;
+    }
+    .second-section-wrapper, .team-main-wrapper, .services-wrapper, .dicas-wrapper, .contact-wrapper, .faq-wrapper {
+        padding-bottom: 70px !important;
     }
 }
 
@@ -482,7 +478,13 @@ footer {
         width: 60% !important;
     }
     .services-wrapper, .dicas-wrapper, .faq-wrapper {
-        margin-top: 90px;
+        margin-top: 120px;
+    }
+    .second-section-wrapper .bg-img-wrapper {
+        height: 800px !important;
+    }
+    .logo {
+        width: 18%;
     }
 }
 
@@ -505,22 +507,34 @@ footer {
         background-size: cover;
     }
     .logo {
-        width: 40% !important;
+        width: 24%;
         left: 0 !important;
     }
     .header_image {
         padding-left: 30px;
         padding-right: 30px;
     }
-    .cell-number-footer{
+    .cell-number-footer {
         font-size: 34px;
+    }
+
+    .faq-list li {
+        padding: 16px 16px !important;
+    }
+    .faq-heading {
+        padding-right: 26px !important;
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 560px) {
-    body {
-        -webkit-text-size-adjust: none;
-        background: #196370;
+@media (max-width: 575.98px) {
+    .logo {
+        width: 44%;
+    }
+}
+
+@media (max-width: 375.98px) {
+    .logo {
+        width: 44%;
     }
 }
 
@@ -529,8 +543,42 @@ footer {
     position: absolute;
     right: 0px;
     bottom: 0px;
+    z-index: -1;
 }
 
 .whatsappicon {
     background-image: url("../imagens/whatsapp-logo-1.png");
+}
+
+.icon_header:hover, .faq-icon-wrapper:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    position: relative;
+    bottom: 12px;
+}
+
+.icon_header, .faq-icon-wrapper {
+    position: relative;
+    bottom: 0;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    /* VERZÖGERUNG */
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.second-section-wrapper .bg-img-wrapper {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
 }
